@@ -6,14 +6,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox  prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" 
+<VBox  xmlns:fx="http://javafx.com/fxml/1" prefHeight="200" prefWidth="320"  
             fx:controller="projet.fxml.FXMLDocumentController">
    
-        <Button  text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Button  text="Second action" onAction="#doSecondAction" fx:id="button2" />
-        <Label minHeight="16" minWidth="69" fx:id="label"  text="free one"/>
-        <Label minHeight="16" minWidth="69" fx:id="label2" >
-            <text>This is label 2</text>
-        </Label>
+      <Label text="bobo"  fx:id="label1" />
     
 </VBox>
+
