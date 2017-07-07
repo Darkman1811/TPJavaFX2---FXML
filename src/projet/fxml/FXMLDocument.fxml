@@ -8,9 +8,14 @@
 
 <VBox  xmlns:fx="http://javafx.com/fxml/1" prefHeight="200" prefWidth="320"  
             fx:controller="projet.fxml.FXMLDocumentController">
-   
-      <Label text="bobo"  fx:id="label1" />      
-      <Label text="${label1.text}"  fx:id="label2" />
+    <fx:define>
+        <ToggleGroup fx:id="toggleGroup"/>
+    </fx:define>
     
+      <Label text="Difficulty"  fx:id="Difficulty" />      
+      
+      <RadioButton  text="Easy"  ToggleGroup="$toggleGroup"/>
+      <RadioButton  text="Medium"  ToggleGroup="$toggleGroup"/>
+      <RadioButton  text="Hard"  ToggleGroup="$toggleGroup"/>
 </VBox>
 
