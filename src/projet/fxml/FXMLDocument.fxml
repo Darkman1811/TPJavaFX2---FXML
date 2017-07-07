@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox  xmlns:fx="http://javafx.com/fxml/1" prefHeight="200" prefWidth="320"  
-            fx:controller="projet.fxml.FXMLDocumentController">
-    <fx:define>
-        <ToggleGroup fx:id="toggleGroup"/>
-    </fx:define>
-    
-      <Label text="Difficulty"  fx:id="Difficulty" />      
+<VBox prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="projet.fxml.FXMLDocumentController">
+   <children>
       
-      <RadioButton  text="Easy"  ToggleGroup="$toggleGroup"/>
-      <RadioButton  text="Medium"  ToggleGroup="$toggleGroup"/>
-      <RadioButton  text="Hard"  ToggleGroup="$toggleGroup"/>
+       
+         <Label fx:id="Difficulty" text="Difficulty" />
+      <DatePicker />
+      <ColorPicker />
+      <AreaChart>
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+   </children>      
+    
 </VBox>
-
